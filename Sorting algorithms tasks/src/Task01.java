@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class Task01 {
 	/*
@@ -34,16 +33,21 @@ public class Task01 {
 		// TODO Auto-generated method stub
 
 	}
-
+	//метода на мехурчето приложен за двумерен масив.
 	static void bubbleSortMatrix(int[][] m) {
+		// броя на итерациите е равен на броя на редовете * броя на колоните 
 		for (int i = 0; i < m.length * m[0].length; i++) {
+			//обхождаме матрицата
 			for (int j = 0; j < m.length; j++) {
 				for (int k = 0; k < m[j].length - 1; k++) {
+					//ако 1-вия елемент на текущия ред е по-малък от последния на предишния ред,
+					//ги разменяме.
 					if (j != 0 && k == 0 && m[j][k] < m[j - 1][m[j].length - 1]) {
 						int temp = m[j][k];
 						m[j][k] = m[j - 1][m[j].length - 1];
 						m[j - 1][m[j].length - 1] = temp;
 					}
+					//ако текущия елемент е по-голям от следващия ги разменяме.
 					if (m[j][k] > m[j][k + 1]) {
 						int temp = m[j][k];
 						m[j][k] = m[j][k + 1];
@@ -53,16 +57,18 @@ public class Task01 {
 			}
 		}
 	}
-
+	//принтира двумерен масив.
 	static void printMatrix(int[][] m) {
+		//обхождаме матрицата
 		for (int i = 0; i < m.length; i++) {
 			System.out.println();
 			for (int j = 0; j < m[i].length; j++) {
+				//при начало на ред
 				if (j == 0) {
 					System.out.print("[" + m[i][j] + ",");
-				} else if (j == m[i].length - 1) {
+				} else if (j == m[i].length - 1) { //при край на реда
 					System.out.print(m[i][j] + "]");
-				} else {
+				} else {   // за междинните слементи
 					System.out.print(m[i][j] + ",");
 				}
 			}
