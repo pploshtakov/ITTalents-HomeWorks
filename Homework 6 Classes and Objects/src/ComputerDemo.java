@@ -28,29 +28,12 @@ public class ComputerDemo {
 		изведат на екрана всичките полета на двата компютъра.*/
 		hp.useMemory(100);
 		lenovo.changeOperationSystem("Windows 8");
-		printParametersOfComputer(lenovo);
+		lenovo.printParametersOfComputer();
 		System.out.println();
-		printParametersOfComputer(hp);
-		
-		
-		
-		
-		
-		
+		hp.printParametersOfComputer();
+			
 		// TODO Auto-generated method stub
 
 	}
-	static void printParametersOfComputer(Computer pc) {
-		if (pc.isNotebook) {
-			System.out.println("Лаптоп.");
-		} else {
-			System.out.println("Настолен компютър.");
-		}
-		System.out.println("Марка: " + pc.brand);
-		System.out.println("Година на производство: " + pc.year);
-		System.out.println("Хард диск: " + pc.hardDiskMemory + "MB");
-		System.out.println("Операционна система: " + pc.operationSystem);
-		System.out.println("Свободна памет: " + pc.freeMemory);
-		System.out.println("Цена: " + pc.price);
-	}
+	
 }

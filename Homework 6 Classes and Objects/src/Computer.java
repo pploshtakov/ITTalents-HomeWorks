@@ -44,5 +44,17 @@ public class Computer {
 			freeMemory -= useMemory;
 		}
 	}
-
+	void printParametersOfComputer() {
+		if (this.isNotebook) {
+			System.out.println("Лаптоп.");
+		} else {
+			System.out.println("Настолен компютър.");
+		}
+		System.out.println("Марка: " + this.brand);
+		System.out.println("Година на производство: " + this.year);
+		System.out.println("Хард диск: " + this.hardDiskMemory + "MB");
+		System.out.println("Операционна система: " + this.operationSystem);
+		System.out.println("Свободна памет: " + this.freeMemory);
+		System.out.println("Цена: " + this.price);
+	}
 }
