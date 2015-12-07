@@ -26,7 +26,7 @@ public class Task01 {
 	 * 11; 15; 16; 19;
 	 */
 	public static void main(String[] args) {
-		int[][] matrix = { { 55, 12, 87, 11 }, { 41, 2, 9, 5 }, { 86, 25, 34, 7 }, { 44, 3, 15, 75 } };
+		int[][] matrix = { { 55, 12, 87,11 }, { 41, 2, 9, 5 }, { 86, 25, 34, 7 }, { 44, 3, 15, 75 } };
 		bubbleSortMatrix(matrix);
 		printMatrix(matrix);
 
