@@ -77,7 +77,7 @@ public class Task21a {
 						System.out.print("A" + s);
 					}
 				}
-				
+
 			}
 			System.out.println();
 		}

@@ -28,8 +28,7 @@ public class Task11 {
 			if (arr[i] % 5 == 0 && arr[i] > 5) {
 				if (arr[i] != arr.length - 1) {
 					System.out.print(arr[i] + ",");
-				}
-				else {
+				} else {
 					System.out.print(arr[i]);
 				}
 				count++;

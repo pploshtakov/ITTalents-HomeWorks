@@ -16,14 +16,11 @@ public class Task09 {
 		String[] numbers = st.split(" ");
 		int sum = 0;
 		for (int i = 0; i < numbers.length; i++) {
-				sum += Integer.parseInt(numbers[i]);
+			sum += Integer.parseInt(numbers[i]);
 		}
 		System.out.println(sum);
 		sc.close();
-		
-		
-		
-		
+
 		// TODO Auto-generated method stub
 
 	}

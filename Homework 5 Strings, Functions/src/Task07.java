@@ -11,7 +11,8 @@ public class Task07 {
 		System.out.println("Въведете набор от думи разделени с интервали.");
 		String words = sc.nextLine();
 		System.out.println("Въведени думи:" + words);
-		System.out.println(countWords(words) + " думи, най-дългата е с " + countLettersLongestWord(words) + " символа.");
+		System.out
+				.println(countWords(words) + " думи, най-дългата е с " + countLettersLongestWord(words) + " символа.");
 		sc.close();
 		// TODO Auto-generated method stub
 
