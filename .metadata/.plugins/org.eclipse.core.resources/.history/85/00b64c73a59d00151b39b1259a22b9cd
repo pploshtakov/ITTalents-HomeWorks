@@ -1,0 +1,20 @@
+
+public class CallDemo {
+
+	public static void main(String[] args) {
+		GSM peshoGsm = new GSM();
+		peshoGsm.simMobileNumber = "0888887777";
+		peshoGsm.insertSimCard();
+		peshoGsm.model = ("Galaxy S4");
+		System.out.println(peshoGsm.simMobileNumber);
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

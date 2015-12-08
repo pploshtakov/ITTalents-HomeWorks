@@ -1,0 +1,35 @@
+
+public class CallDemo {
+
+	public static void main(String[] args) {
+		GSM peshoGsm = new GSM();
+		peshoGsm.simMobileNumber = "0888887777";
+		peshoGsm.insertSimCard();
+		peshoGsm.model = "Galaxy S4";
+		GSM ivanGsm = new GSM();
+		ivanGsm.simMobileNumber = "0877777777";
+		ivanGsm.insertSimCard();
+		ivanGsm.model = "Galxy S4";
+		Call call = new Call();
+		call.caller = peshoGsm.simMobileNumber;
+		call.receiver = ivanGsm.simMobileNumber;
+		call.duration = 2;
+		peshoGsm.call(ivanGsm, call);
+		Call call1 = new Call();
+		call1.caller = ivanGsm.simMobileNumber;
+		call1.receiver = peshoGsm.simMobileNumber;
+		call1.duration = 3.5;
+		peshoGsm.call(peshoGsm, call1);
+		Call call2 = new Call();
+		call2.caller = peshoGsm.simMobileNumber;
+		call2.receiver = ivanGsm.simMobileNumber;
+		call2.duration = 5;
+		peshoGsm.call(ivanGsm, call2);
+		System.out.println("Price of all outgoing calls " + peshoGsm.getSumForCall());
+		peshoGsm.printInfoForTheLastOutgoingCall();
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
