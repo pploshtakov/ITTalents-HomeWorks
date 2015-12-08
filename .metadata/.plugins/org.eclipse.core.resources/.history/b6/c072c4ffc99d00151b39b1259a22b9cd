@@ -42,9 +42,9 @@ public class CallDemo {
 		GSM ivanGsm = new GSM();
 		ivanGsm.insertSimCard("0877777777");
 		ivanGsm.model = "Galxy S4";
-		peshoGsm.call(ivanGsm, 2);
-		ivanGsm.call(peshoGsm, 3.5);
-		peshoGsm.call(ivanGsm, 5);
+		peshoGsm.call(ivanGsm.simMobileNumber, 2);
+		ivanGsm.call(peshoGsm.simMobileNumber, 3.5);
+		peshoGsm.call(ivanGsm.simMobileNumber, 5);
 		System.out.println("Price of all outgoing calls on pesho " + peshoGsm.getSumForCall());
 		System.out.println("Info pesho last Outgoing call.");
 		peshoGsm.printInfoForTheLastOutgoingCall();

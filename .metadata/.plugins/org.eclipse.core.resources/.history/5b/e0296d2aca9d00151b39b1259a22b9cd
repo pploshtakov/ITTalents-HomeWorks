@@ -97,9 +97,8 @@ public class GSM {
 	}
 
 	void printInfoForTheLastIncomingCall() {
-		if (lastIncomingCallTime > 0) {
+		if (lastIncomingCall != null) {
 			System.out.println("Last incoming call from " + lastIncomingCall);
-			System.out.println("Last incoming call time " + lastIncomingCallTime);
 		} else {
 			System.out.println("No incoming calls.");
 		}

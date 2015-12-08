@@ -5,7 +5,6 @@ public class GSM {
 	String simMobileNumber;
 	double outgoingCallsDuration;
 	double lastOutgoingCallTime;
-	double lastIncomingCallTime;
 	String lastIncomingCall;
 	String lastOutgoingCall;
 
@@ -31,20 +30,20 @@ public class GSM {
 	}
 
 	// - call( receiver, duration) – В тялото му да се направят проверки за:
-	void call(GSM reciver, double duration) {
+	void call(String reciver, double duration) {
 		Call call = new Call();
 		call.caller = simMobileNumber;
-		call.receiver = reciver.simMobileNumber;
+		call.receiver = reciver;
 		call.duration = duration;
 		// • дали и двата телефона имат сим карта
-		if (hasSimCard && reciver.hasSimCard) {
+		if (hasSimCard && reciver != null) {
 			// • дали въведената дължина на разговора е валидна
 			if (call.duration <= 0) {
 				System.out.println("Duration time must be greater than 0!");
 			}
 			// • дали двата телефона (този за който се извиква метода и
 			// този към който се прави обаждането) не са един и същ телефон
-			else if (simMobileNumber.equals(reciver.simMobileNumber)) {
+			else if (simMobileNumber.equals(reciver)) {
 				System.out.println("Error , call on your own phone!");
 			} else {
 				/*
@@ -55,7 +54,7 @@ public class GSM {
 				 * за който се извиква метода) и задава същото обаждане като
 				 * последно входящо за телефона към който се прави обаждането.
 				 */
-				lastOutgoingCall = reciver.simMobileNumber;
+				lastOutgoingCall = reciver;
 				/*
 				 * Осен това увеличава стойността на outgoingCallsDuration със
 				 * дължината на разговора за телефона от който се прави
@@ -63,8 +62,6 @@ public class GSM {
 				 */
 				outgoingCallsDuration += call.duration;
 				lastOutgoingCallTime = call.duration;
-				reciver.lastIncomingCall = simMobileNumber;
-				reciver.lastIncomingCallTime = call.duration;
 			}
 		} else {
 			System.out.println("Caller or reciver no SIM card!");
@@ -99,7 +96,7 @@ public class GSM {
 	void printInfoForTheLastIncomingCall() {
 		if (lastIncomingCallTime > 0) {
 			System.out.println("Last incoming call from " + lastIncomingCall);
-			System.out.println("Last incoming call time " + lastIncomingCallTime);
+			System.out.println("Time " + lastIncomingCallTime);
 		} else {
 			System.out.println("No incoming calls.");
 		}

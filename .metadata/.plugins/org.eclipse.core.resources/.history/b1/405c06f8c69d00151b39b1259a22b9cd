@@ -31,11 +31,7 @@ public class GSM {
 	}
 
 	// - call( receiver, duration) – В тялото му да се направят проверки за:
-	void call(GSM reciver, double duration) {
-		Call call = new Call();
-		call.caller = simMobileNumber;
-		call.receiver = reciver.simMobileNumber;
-		call.duration = duration;
+	void call(GSM reciver, Call call) {
 		// • дали и двата телефона имат сим карта
 		if (hasSimCard && reciver.hasSimCard) {
 			// • дали въведената дължина на разговора е валидна
@@ -56,6 +52,7 @@ public class GSM {
 				 * последно входящо за телефона към който се прави обаждането.
 				 */
 				lastOutgoingCall = reciver.simMobileNumber;
+				reciver.lastIncomingCall = simMobileNumber;
 				/*
 				 * Осен това увеличава стойността на outgoingCallsDuration със
 				 * дължината на разговора за телефона от който се прави
@@ -63,7 +60,6 @@ public class GSM {
 				 */
 				outgoingCallsDuration += call.duration;
 				lastOutgoingCallTime = call.duration;
-				reciver.lastIncomingCall = simMobileNumber;
 				reciver.lastIncomingCallTime = call.duration;
 			}
 		} else {
@@ -99,7 +95,7 @@ public class GSM {
 	void printInfoForTheLastIncomingCall() {
 		if (lastIncomingCallTime > 0) {
 			System.out.println("Last incoming call from " + lastIncomingCall);
-			System.out.println("Last incoming call time " + lastIncomingCallTime);
+			System.out.println("Time " + lastIncomingCallTime);
 		} else {
 			System.out.println("No incoming calls.");
 		}
