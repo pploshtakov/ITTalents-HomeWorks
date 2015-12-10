@@ -54,7 +54,7 @@ public class Computer {
 			this.price = 0.99;
 			System.out.println("Please reenter price. Otherwise we will put price default (0.99$).");
 		}
-		if (hardDiskMemory >= 32) {
+		if (hardDiskMemory >= 1024) {
 			this.hardDiskMemory = hardDiskMemory;
 		} else {
 			this.hardDiskMemory = hardDiskMemory;

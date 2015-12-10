@@ -1,0 +1,19 @@
+
+public class ComputersDemo {
+
+	public static void main(String[] args) {
+		Computer lenovo = new Computer();
+		Computer dell = new Computer(2000, 150, 1024, 256);
+		Computer acer = new Computer(2005, 0, 2048, 1024, true, "Windows 7"); 
+		System.out.println(dell.comparePrice(acer));
+		
+		
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
