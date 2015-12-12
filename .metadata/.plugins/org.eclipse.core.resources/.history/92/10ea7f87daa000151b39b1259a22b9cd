@@ -1,0 +1,16 @@
+
+public class StudentGroup {
+	String groupSubject;
+	Student[] students;
+	int freePlaces;
+	
+	// конструктор по подразбиране, който създава места за 5 студента в групата
+	//(инициализира полето students с нов масив от 5 елемента)
+	// и задава стойност 5 на полето freePlaces
+	StudentGroup() {
+		
+	}
+	
+	
+	
+}
