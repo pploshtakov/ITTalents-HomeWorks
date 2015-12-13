@@ -28,12 +28,13 @@ public class College {
 		rali.receiveScholarship(5.5, 30);
 		ivo.receiveScholarship(5.5, 25);
 		gabi.receiveScholarship(5.5, 20);
+		/*
 		gosho.upYear();
 		pesho.upYear();
 		martin.upYear();
 		ivan.upYear();
 		vladi.upYear();
-		rali.upYear();
+		rali.upYear();*/
 		System.out.println("Rali is " + rali.yearInColleg + " years in college.");
 		StudentGroup geodeziq = new StudentGroup("Geodeziq");
 		StudentGroup sss = new StudentGroup();

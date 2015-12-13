@@ -45,7 +45,7 @@ public class StudentGroup {
 	// студенти в курса
 	void printStudentsInGroup() {
 		for (int i = 0; i < this.students.length; i++) {
-			System.out.print("Student " + (i + 1) + " " + this.students[i].name);
+			System.out.print("Student " + (i+1) + " " + this.students[i].name);
 			System.out.println();
 			System.out.println("Age " + this.students[i].age);
 			System.out.println("Is degree " + this.students[i].isDegree);
@@ -56,17 +56,14 @@ public class StudentGroup {
 		}
 	}
 
-	// добавя студент към групата, ако има свободни места и специалността му е
-	// като на групата
-	// ако групата няма специалност, специалността става като тази на 1-вия
-	// добавен студент
 	void addStudentInGroup(Student student) {
 		if (this.groupSubject == null && this.freePlaces == this.students.length) {
 			this.groupSubject = student.subject;
 		}
 		if (this.freePlaces <= 0) {
 			System.out.println("No vacancies in this group.");
-		} else if (this.groupSubject.equalsIgnoreCase(student.subject)) {
+		}
+		else if (this.groupSubject.equalsIgnoreCase(student.subject)) {
 			this.students[this.students.length - this.freePlaces] = student;
 			this.freePlaces -= 1;
 		} else {
@@ -75,13 +72,4 @@ public class StudentGroup {
 
 	}
 
-	void upYearGroup() {
-		for (int i = 0; i < this.students.length; i++) {
-			if (students[i].grade > 2) {
-				students[i].upYear();
-			} else {
-				System.out.println(students[i].name + " lacked success to pass in the upper!");
-			}
-		}
-	}
 }
