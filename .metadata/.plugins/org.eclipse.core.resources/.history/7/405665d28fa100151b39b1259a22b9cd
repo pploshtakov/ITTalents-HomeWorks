@@ -74,7 +74,7 @@ public class StudentGroup {
 		}
 
 	}
-	//извиква метод upYear() за всеки студен от групата, ако има нужния успех
+
 	void upYearGroup() {
 		for (int i = 0; i < this.students.length; i++) {
 			if (students[i].grade > 2) {
