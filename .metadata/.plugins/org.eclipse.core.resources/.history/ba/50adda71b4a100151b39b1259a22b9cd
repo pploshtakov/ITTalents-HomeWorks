@@ -39,7 +39,7 @@ public class Employee {
 	}
 
 	void setHoursLeft(double hoursLeft) {
-		if (hoursLeft >= 0) {
+		if (hoursLeft > 0) {
 			this.hoursLeft = hoursLeft;
 		} else {
 			System.out.println("Hours must be a positive!");
@@ -66,8 +66,8 @@ public class Employee {
 				this.hoursLeft = this.hoursLeft - currentTask.getWorkingHours();
 				currentTask.setWorkingHours(0);
 			} else {
-				currentTask.setWorkingHours(currentTask.getWorkingHours() - this.hoursLeft);
 				this.hoursLeft = 0;
+				currentTask.setWorkingHours(currentTask.getWorkingHours() - this.hoursLeft);
 			}
 		} else {
 			if (this.hoursLeft <= 0) {
