@@ -3,12 +3,6 @@ public class Movie {
 	private String title;
 	private int year;
 	private Actor[] actors;
-	public Movie(String title, int year, Actor[] actors) {
-		super();
-		this.title = title;
-		this.year = year;
-		this.actors = actors;
-	}
 	public String getTitle() {
 		return title;
 	}
