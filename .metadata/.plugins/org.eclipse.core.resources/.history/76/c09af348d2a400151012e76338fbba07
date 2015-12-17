@@ -4,13 +4,6 @@ public class Actor {
 	private String lastName;
 	private String gender;
 	private int age;
-	public Actor(String firstName, String lastName, String gender, int age) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.gender = gender;
-		this.age = age;
-	}
 	public String getFirstName() {
 		return firstName;
 	}
