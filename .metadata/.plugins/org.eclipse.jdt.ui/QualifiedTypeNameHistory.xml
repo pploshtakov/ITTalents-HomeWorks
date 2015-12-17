@@ -2,4 +2,8 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="Computer"/>
+<fullyQualifiedTypeName name="Student"/>
+<fullyQualifiedTypeName name="StudentGroup"/>
+<fullyQualifiedTypeName name="lesson16homework2.Task"/>
+<fullyQualifiedTypeName name="lesson16homework2.Employee"/>
 </qualifiedTypeNameHistroy>
