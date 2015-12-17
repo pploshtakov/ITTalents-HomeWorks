@@ -30,7 +30,7 @@ public class Movie {
 	public int getActorsAverageAge() {
 		int sumAge = 0;
 		for (int i = 0; i < this.actors.length; i++) {
-			sumAge += this.actors[i].getAge();
+			sumAge += this.actors.age;
 		}
 		return sumAge/this.actors.length;
 	}
