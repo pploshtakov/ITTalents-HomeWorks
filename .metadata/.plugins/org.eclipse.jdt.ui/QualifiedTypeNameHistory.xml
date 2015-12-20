@@ -6,4 +6,10 @@
 <fullyQualifiedTypeName name="StudentGroup"/>
 <fullyQualifiedTypeName name="lesson16homework2.Task"/>
 <fullyQualifiedTypeName name="lesson16homework2.Employee"/>
+<fullyQualifiedTypeName name="Actor"/>
+<fullyQualifiedTypeName name="Movie"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="PersonClasses.Person"/>
+<fullyQualifiedTypeName name="PersonClasses.Student"/>
+<fullyQualifiedTypeName name="PersonClasses.Employee"/>
 </qualifiedTypeNameHistroy>
