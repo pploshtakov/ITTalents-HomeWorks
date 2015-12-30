@@ -10,11 +10,11 @@ public class WorkDemo {
 		Employee eli = new Employee("");
 		eli.setName("Eli");
 		eli.setHoursLeft(4);
-		eli.setTask(monthlyInventory);
-		eli.work();
-		eli.work();
+		//eli.setTask(monthlyInventory);
+		//eli.work();
+		//eli.work();
 		eli.setHoursLeft(6);
-		eli.work();
+		//eli.work();
 		
 		
 		

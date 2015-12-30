@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;AllWork.java&apos; to &apos;Homework 06 Classes and Objects/src/lesson16homework2&apos;&#x0D;&#x0A;- Original project: &apos;Homework 07 Inheritance&apos;&#x0D;&#x0A;- Destination element: &apos;Homework 06 Classes and Objects/src/lesson16homework2&apos;&#x0D;&#x0A;- Original element: &apos;PersonClasses.AllWork.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Homework 06 Classes and Objects/src&lt;lesson16homework2" element1="/src&lt;PersonClasses{AllWork.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1451467993226" units="1" version="1.0"/>
+</session>

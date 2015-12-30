@@ -1,0 +1,17 @@
+package lesson16homework2;
+
+public class AllWork {
+	/*
+	 * Да се създаде клас AllWork, които репрезентира множеството от всички
+	 * задачи, които трябва да свършат работниците в офиса.
+	 */
+	private Task[] tasks;
+	
+	
+	
+	
+	
+	
+	
+
+}
