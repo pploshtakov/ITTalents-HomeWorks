@@ -1,0 +1,10 @@
+package shopingCenters;
+
+public class ShopingCenter {
+
+	public static ShopingCenter randomShopingCenter() {
+
+		return new ShopingCenter();
+	}
+
+}

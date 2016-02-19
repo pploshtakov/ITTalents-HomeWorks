@@ -1,0 +1,9 @@
+package dealers;
+
+public class Retailer extends Dealer {
+
+	public Retailer(String name, String agress, int capital) {
+		super(name, agress, capital, 10, 15);
+	}
+
+}

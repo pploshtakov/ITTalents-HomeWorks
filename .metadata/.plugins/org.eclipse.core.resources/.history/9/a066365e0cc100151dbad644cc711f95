@@ -1,0 +1,21 @@
+package demo;
+
+import providers.Provider;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//create 10 random providers
+		Provider providers = new Provider[10];
+		for(int i = 0; i < providers.length; i++) {
+			
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+}

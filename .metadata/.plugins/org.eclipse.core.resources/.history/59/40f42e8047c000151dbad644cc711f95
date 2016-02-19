@@ -1,0 +1,25 @@
+package vignette;
+
+import java.util.Random;
+
+public class Vignette {
+	public static final String[] VALIDITY = {"day","month","year"};
+	public static final String[] PURPOSE_VIGNETTE = {"BusVignette", "CarVignette", "TruckVignette"};
+	private String validity;
+	private String typeOfVignette;
+	
+	protected Vignette(String typeOfVignette, String validity) {
+		this.validity = validity;
+		this.typeOfVignette = typeOfVignette;
+	}
+	
+	public static Vignette randomVignette() {
+		if ((PURPOSE_VIGNETTE[new Random().nextInt(PURPOSE_VIGNETTE.length)]).equals("CarVignette")) {
+			return new CarVignette();
+		} else if ((PURPOSE_VIGNETTE[new Random().nextInt(PURPOSE_VIGNETTE.length)]).equals("BusVignette")){
+			return new BusVignette();
+		}
+		return new TruckVignette();
+	}
+
+}

@@ -1,0 +1,19 @@
+package vehicles;
+
+import java.util.Random;
+
+public class Vehicle {
+	public static final String[] TYPE_OF_VIHECLES = { "Bus", "Car", "Truck" };
+
+	// auto generate vehicle
+	public static Vehicle autoGenerateVehicle() {
+		if ((TYPE_OF_VIHECLES[new Random().nextInt(TYPE_OF_VIHECLES.length)]).equals("Car")) {
+			return new Car();
+		} else if ((TYPE_OF_VIHECLES[new Random().nextInt(TYPE_OF_VIHECLES.length)]).equals("Bus")) {
+			return new Bus();
+		} else if ((TYPE_OF_VIHECLES[new Random().nextInt(TYPE_OF_VIHECLES.length)]).equals("Truck")){
+			return new Truck();
+		}
+	}
+
+}

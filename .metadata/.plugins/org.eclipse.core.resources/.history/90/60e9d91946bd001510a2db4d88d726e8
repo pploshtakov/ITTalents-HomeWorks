@@ -1,0 +1,110 @@
+package Notepad;
+
+import java.util.Scanner;
+
+public class SecuredNotepad extends SimpleNotepad {
+	private String pass;
+
+	public SecuredNotepad(String title, int numberOfPages, String pass) {
+		super(title, numberOfPages);
+		this.setPass(pass);
+	}
+
+	@Override
+	public boolean searchWord(String word) {
+		if (this.checkPass()) {
+			return super.searchWord(word);
+		}
+		return false;
+	}
+
+	@Override
+	public void printAllPagesWithDigits() {
+		if (this.checkPass()) {
+			super.printAllPagesWithDigits();
+		}
+	}
+
+	@Override
+	public void setNumberOfPages(int numberOfPages) {
+		if (this.checkPass()) {
+			super.setNumberOfPages(numberOfPages);
+		}
+	}
+
+	@Override
+	public void addTextInPage(int numberOfPage, String text) {
+		if (this.checkPass()) {
+			super.addTextInPage(numberOfPage, text);
+		}
+	}
+
+	@Override
+	public void addNewTextInPage(int numberOfPage, String text) {
+		if (this.checkPass()) {
+			super.addNewTextInPage(numberOfPage, text);
+		}
+	}
+
+	@Override
+	public void delTextInPage(int numberOfPage) {
+		if (this.checkPass()) {
+			super.delTextInPage(numberOfPage);
+		}
+	}
+
+	@Override
+	public void printFromNotepad() {
+		if (this.checkPass()) {
+			super.printFromNotepad();
+		}
+	}
+
+	private void setPass(String pass) {
+		// if (pass != null) {
+		// this.pass = pass;
+		// } else {
+		// System.out.println("Set pasword, or set default - 0000");
+		// this.pass = "0000";
+		// }
+		if (pass.matches("^.*(?=.{8,})(?=..*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$")){
+			this.pass = pass;
+		} else {
+			System.out.println("Fuck of!");
+		}
+	}
+
+	public void setNewPass(String pass) {
+		if (this.checkPass()) {
+			this.pass = pass;
+		}
+	}
+
+	@Override
+	public String getTitle() {
+		if (this.checkPass()) {
+			return super.getTitle();
+		} else {
+			return null;
+		}
+	}
+
+	@Override
+	public void setTitle(String title) {
+		if (this.checkPass()) {
+			super.setTitle(title);
+		}
+	}
+
+	Scanner sc = new Scanner(System.in);
+
+	private boolean checkPass() {
+		System.out.println("Plase enter a pasword!");
+		String pass = sc.nextLine();
+		if (!this.pass.equals(pass)) {
+			System.out.println("Wrong pass!");
+		}
+		return this.pass.equals(pass);
+	}
+
+}

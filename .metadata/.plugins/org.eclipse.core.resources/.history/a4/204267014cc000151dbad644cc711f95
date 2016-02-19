@@ -1,0 +1,28 @@
+package vignette;
+
+import java.util.Random;
+
+import vehicles.Vehicle;
+
+public class Vignette {
+	public static final String[] VALIDITY = {"day","month","year"};
+	public static final String[] PURPOSE_VIGNETTE = {"Bus", "Car", "Truck"};
+	private String validity;
+	private String typeOfVignette;
+	
+	protected Vignette(String typeOfVignette, String validity) {
+		this.validity = validity;
+		this.typeOfVignette = typeOfVignette;
+	}
+	
+	public static Vignette randomVignette() {
+		if ((PURPOSE_VIGNETTE[new Random().nextInt(PURPOSE_VIGNETTE.length)]).equals("CarVignette")) {
+			return new CarVignette(Vehicle.TYPE_CAR, (VALIDITY[new Random().nextInt(VALIDITY.length)]));
+		} else if ((PURPOSE_VIGNETTE[new Random().nextInt(PURPOSE_VIGNETTE.length)]).equals("BusVignette")){
+			return new BusVignette(Vehicle.TYPE_BUS, (VALIDITY[new Random().nextInt(VALIDITY.length)]));
+		}
+		return new TruckVignette(Vehicle.TYPE_TRUCK, (VALIDITY[new Random().nextInt(VALIDITY.length)]));
+		
+	}
+
+}

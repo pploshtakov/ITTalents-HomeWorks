@@ -1,0 +1,10 @@
+package driver;
+
+public class Driver {
+
+	public static Driver autoGenarateDriver() {
+		// TODO 
+		return null;
+	}
+
+}

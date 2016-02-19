@@ -1,0 +1,7 @@
+package driverAndVehicle;
+
+import vineteTask.Vehicle;
+
+public class Car extends Vehicle {
+
+}

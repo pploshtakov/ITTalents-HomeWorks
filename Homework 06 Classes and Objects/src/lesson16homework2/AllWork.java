@@ -45,8 +45,11 @@ public class AllWork {
 	public Task getNextTask() {
 		if (this.currentUnassignesTask < this.tasks.length){
 			return this.tasks[this.currentUnassignesTask++];
+		} else {
+			this.currentUnassignesTask = 0;
+			return this.tasks[this.currentUnassignesTask];
 		}
-		return this.tasks[this.currentUnassignesTask - 1];
+		
 	}
 
 	public int getCurrentUnassignesTask() {
@@ -62,21 +65,17 @@ public class AllWork {
 	// Да се спазва принципа за капсулация на данни!!!
 	public boolean isAllWorkDone() {
 		boolean isAllWorkDone = true;
-		if (this.freePlacesForTasks < 10) {
-			for (int i = 0; i < this.tasks.length - this.freePlacesForTasks; i++) {
+			for (int i = 0; i < this.tasks.length; i++) {
 				if (tasks[i].getWorkingHours() > 0) {
-					isAllWorkDone = false;
-					break;
+					System.out.println("There is unfinished tasks!");
+					return false;
+			
 				}
 			}
 			if (isAllWorkDone) {
 				System.out.println("All tasks finished.");
-			} else {
-				System.out.println("There is unfinished tasks!");
 			}
-		} else {
-			System.out.println("No set tasks.");
-		}
+		
 		return isAllWorkDone;
 	}
 

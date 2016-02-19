@@ -1,0 +1,14 @@
+package vignette;
+
+import vehicles.Vehicle;
+
+public class CarVignette extends Vignette {
+
+	public static final int PRICE_FOR_DAY = 5;
+
+	protected CarVignette(String typeOfVignette, String validity,int price) {
+		super(typeOfVignette, validity, price);
+	}
+	
+	
+}

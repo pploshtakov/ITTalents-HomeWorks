@@ -1,0 +1,30 @@
+package dealers;
+
+import providers.Provider;
+import shopingCenters.ShopingCenter;
+
+public class Retailer extends Dealer {
+
+	public Retailer(String name, String agress, int capital) {
+		super(name, agress, capital, 10, 15);
+	}
+
+	@Override
+	public void setProvider(Provider provider) {
+		if (this.freePlacesForProviders > 0) {
+			this.providers[this.providers.length - this.freePlacesForProviders] = provider;
+		} else {
+			System.out.println("Retailers only works 15 providers!");
+		}
+	}
+
+	@Override
+	public void setShopingCenter(ShopingCenter shopingCenter) {
+		if (this.freePlacesForCenters > 0) {
+			this.shopingCenters[this.shopingCenters.length - this.freePlacesForCenters] = shopingCenter;
+		} else {
+			System.out.println("Retailers only works 10 shoping centers!");
+		}
+	}
+
+}

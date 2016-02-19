@@ -1,0 +1,10 @@
+package vignette;
+
+public class CarVignette extends Vignette {
+
+	protected CarVignette(String typeOfVignette, String validity) {
+		super(typeOfVignette, validity);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,5 @@
+package vignette;
+
+public class TruckVignette extends Vignette {
+
+}

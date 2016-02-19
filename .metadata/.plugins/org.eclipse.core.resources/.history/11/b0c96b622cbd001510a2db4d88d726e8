@@ -1,0 +1,15 @@
+package Notepad;
+
+public class NotepadDemo {
+
+	public static void main(String[] args) {
+		Notepad notebook = new SimpleNotepad("notebook",0);
+		notebook.printFromNotepad();
+		
+		
+		
+		
+
+	}
+
+}

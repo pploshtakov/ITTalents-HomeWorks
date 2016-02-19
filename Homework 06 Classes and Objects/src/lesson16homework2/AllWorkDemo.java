@@ -60,7 +60,7 @@ public class AllWorkDemo {
 			}
 		}
 		// TODO Auto-generated method stub
-
+	
 	}
 	static void workingDay(Employee[] workers) {
 		newWorkingDay(workers);
@@ -72,6 +72,7 @@ public class AllWorkDemo {
 		for (int i = 0; i < workers.length; i++) {
 			workers[i].startWorkingDay();
 		}
+		
 	}
 
 }

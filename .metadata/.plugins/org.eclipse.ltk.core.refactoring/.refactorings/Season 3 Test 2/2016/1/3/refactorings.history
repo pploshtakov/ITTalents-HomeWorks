@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Shop.DomoShop&apos; to &apos;DemoShop&apos;&#x0D;&#x0A;- Original project: &apos;Season 3 Test 2&apos;&#x0D;&#x0A;- Original element: &apos;Shop.DomoShop&apos;&#x0D;&#x0A;- Renamed element: &apos;Shop.DemoShop&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DomoShop&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Shop{DomoShop.java[DomoShop" matchStrategy="1" name="DemoShop" qualified="false" references="true" similarDeclarations="false" stamp="1452605895692" textual="false" version="1.0"/>
+</session>

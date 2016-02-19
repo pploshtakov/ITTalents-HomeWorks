@@ -82,12 +82,13 @@ public class Employee {
 	 * докато не свършат свободните задачи.
 	 */
 	public void work() {
-		if (currentTask == null || currentTask.getWorkingHours() <= 0) {
+		if (currentTask == null) {
 			this.setTask();
 		}
-		while (this.hoursLeft > 0) {
+		while (this.hoursLeft > 0 && currentTask.getWorkingHours() > 0) {
 				if (this.hoursLeft > currentTask.getWorkingHours()) {
 					this.hoursLeft = this.hoursLeft - currentTask.getWorkingHours();
+					currentTask.setWorkingHours(0);
 					this.setTask();
 					System.out.println("-------------------");
 					this.showReport();

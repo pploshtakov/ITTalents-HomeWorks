@@ -1,0 +1,14 @@
+package Notepad;
+
+public class NotepadDemo {
+
+	public static void main(String[] args) {
+		SecuredNotepad notebook = new SecuredNotepad("notebook",50,"0000");
+		System.out.println(notebook.getTitle());
+		
+		
+		
+
+	}
+
+}

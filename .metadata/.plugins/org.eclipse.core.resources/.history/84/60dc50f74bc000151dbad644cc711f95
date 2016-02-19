@@ -1,0 +1,14 @@
+package gasStation;
+
+import vignette.Vignette;
+
+public class GasStation {
+	private int sales;
+	private Vignette[] vignettes;
+
+	public Vignette bayVignette() {
+		//TODO
+		return new Vignette();
+	}
+
+}

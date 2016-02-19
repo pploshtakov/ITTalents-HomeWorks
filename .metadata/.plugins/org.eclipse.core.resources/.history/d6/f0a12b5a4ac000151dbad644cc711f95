@@ -1,0 +1,13 @@
+package vignette;
+
+import vehicles.Vehicle;
+
+public class CarVignette extends Vignette {
+	private String type = Vehicle.TYPE_CAR;
+
+	protected CarVignette(String typeOfVignette, String validity) {
+		super(typeOfVignette, validity);
+	}
+	
+	
+}

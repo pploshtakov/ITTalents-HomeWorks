@@ -1,0 +1,17 @@
+package Notepad;
+
+public class NotepadDemo {
+
+	public static void main(String[] args) {
+		SecuredNotepad notebook = new SecuredNotepad("notebook",5,"0000");
+		notebook.addNewTextInPage(1, "нищо не разбирам");
+		Page page = new Page("1", "нищо,не,разбирам");
+		System.out.println(page.searchWord("разбирам"));
+		
+		
+		
+		
+
+	}
+
+}

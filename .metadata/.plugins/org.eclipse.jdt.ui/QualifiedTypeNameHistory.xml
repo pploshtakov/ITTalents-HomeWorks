@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="Computer"/>
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="StudentGroup"/>
-<fullyQualifiedTypeName name="lesson16homework2.Task"/>
-<fullyQualifiedTypeName name="lesson16homework2.Employee"/>
 <fullyQualifiedTypeName name="Actor"/>
 <fullyQualifiedTypeName name="Movie"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="PersonClasses.Person"/>
 <fullyQualifiedTypeName name="PersonClasses.Student"/>
 <fullyQualifiedTypeName name="PersonClasses.Employee"/>
+<fullyQualifiedTypeName name="lesson16homework2.Task"/>
+<fullyQualifiedTypeName name="lesson16homework2.Employee"/>
+<fullyQualifiedTypeName name="lesson16homework2.AllWork"/>
+<fullyQualifiedTypeName name="vineteTask.carVinete"/>
+<fullyQualifiedTypeName name="vineteTask.busVinete"/>
+<fullyQualifiedTypeName name="vineteTask.truckVinete"/>
+<fullyQualifiedTypeName name="dateValidator.RandomGenerator"/>
+<fullyQualifiedTypeName name="driver.Driver"/>
+<fullyQualifiedTypeName name="vignette.Vignette"/>
+<fullyQualifiedTypeName name="vehicles.Vehicle"/>
+<fullyQualifiedTypeName name="org.omg.Messaging.SyncScopeHelper"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="vignette.BusVignette"/>
+<fullyQualifiedTypeName name="vignette.CarVignette"/>
+<fullyQualifiedTypeName name="vignette.TruckVignette"/>
+<fullyQualifiedTypeName name="gasStation.GasStation"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="shopingCenters.Mall"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="providers.Provider"/>
+<fullyQualifiedTypeName name="shopingCenters.ShopingCenter"/>
+<fullyQualifiedTypeName name="dealers.Peddler"/>
+<fullyQualifiedTypeName name="randoms.Randoms"/>
+<fullyQualifiedTypeName name="dealers.ET"/>
+<fullyQualifiedTypeName name="dealers.Retailer"/>
+<fullyQualifiedTypeName name="shopingCenters.Market"/>
+<fullyQualifiedTypeName name="shopingCenters.Streat"/>
+<fullyQualifiedTypeName name="dealers.Dealer"/>
 </qualifiedTypeNameHistroy>

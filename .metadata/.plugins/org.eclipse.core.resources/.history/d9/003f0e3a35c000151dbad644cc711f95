@@ -1,0 +1,25 @@
+package demo;
+
+import driver.Driver;
+import gasStation.GasStation;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		GasStation gasStation = new GasStation();
+		//auto genarate vignette
+		//print on screan???
+		Driver[] drivers = new Driver[20];
+		for (int i = 0; i < drivers.length; i++) {
+			drivers[i] = new Driver((Driver.randomName()), (Math.random()), gasStation);
+		}
+		for(int i = 0; i < drivers.length; i++) {
+			System.out.println(drivers[i].name);
+			System.out.println(drivers[i].money);
+		}
+		
+		
+
+	}
+
+}

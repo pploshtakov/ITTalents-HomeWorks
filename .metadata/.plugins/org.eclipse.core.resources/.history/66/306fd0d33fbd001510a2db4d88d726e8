@@ -1,0 +1,28 @@
+package Notepad;
+
+public class NotepadDemo {
+
+	public static void main(String[] args) {
+		SecuredNotepad notebook = new SecuredNotepad("notebook",5,"0000");
+		notebook.addTextInPage(1, "This is Secure Notepad.");
+		notebook.printFromNotepad();
+		System.out.println("------------");
+		notebook.addNewTextInPage(1, "Any action it wants password!");
+		notebook.printFromNotepad();
+		System.out.println("------------");
+		notebook.delTextInPage(1);
+		notebook.printFromNotepad();
+		System.out.println("------------");
+		notebook.addTextInPage(1, "This is new Secure Notepad");
+		notebook.addTextInPage(1, "Any action it wants password!");
+		notebook.printFromNotepad();
+		System.out.println("------------");
+		notebook.addNewTextInPage(2, "The pasword is 0000");
+		notebook.printAllPagesWithDigits();
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package dealers;
+
+import providers.Provider;
+import shopingCenters.ShopingCenter;
+
+public class Peddler extends Dealer {
+
+	public Peddler(String name, String agress, int capital) {
+		super(name, agress, capital, 0, 1);
+	}
+	
+	
+
+}

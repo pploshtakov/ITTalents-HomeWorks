@@ -1,0 +1,68 @@
+package Notepad;
+
+import java.util.Scanner;
+
+public class SecuredNotepad extends Notepad {
+	private String pass;
+
+	public SecuredNotepad(String title, int numberOfPages, String pass) {
+		super(title, numberOfPages);
+		this.pass = pass;
+	}
+
+	@Override
+	public void setNumberOfPages(int numberOfPages) {
+		if (this.checkPass()) {
+			super.setNumberOfPages(numberOfPages);
+		}
+	}
+
+	@Override
+	public void addTextInPage(int numberOfPage, String text) {
+		if (this.checkPass()) {
+			super.addTextInPage(numberOfPage, text);
+		}
+	}
+
+	@Override
+	public void addNewTextInPage(int numberOfPage, String text) {
+		if (this.checkPass()) {
+			super.addNewTextInPage(numberOfPage, text);
+		}
+	}
+
+	@Override
+	public void delTextInPage(int numberOfPage) {
+		if (this.checkPass()) {
+			super.delTextInPage(numberOfPage);
+		}
+	}
+
+	@Override
+	public void printFromNotepad() {
+		if (this.checkPass()) {
+			super.printFromNotepad();
+		}
+	}
+
+	@Override
+	public String getTitle() {
+		if (this.checkPass()) {
+			return super.getTitle();
+		} else {
+			return null;
+		}
+	}
+
+	Scanner sc = new Scanner(System.in);
+
+	private boolean checkPass() {
+		System.out.println("Plase enter a pasword!");
+		String pass = sc.nextLine();
+		if (!this.pass.equals(pass)) {
+			System.out.println("Wrong pass!");
+		}
+		return this.pass.equals(pass);
+	}
+
+}

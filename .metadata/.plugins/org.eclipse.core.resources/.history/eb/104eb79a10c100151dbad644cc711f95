@@ -1,0 +1,34 @@
+package providers;
+
+import java.util.Random;
+
+public class Provider {
+	public static final String TYPE_RETAIL = "ritail provider";
+	public static final String TYPE_WHOLESALE = "wholesale provider";
+	public static final String[] TYPE_PROVIDERS = { TYPE_RETAIL, TYPE_WHOLESALE };
+	private String type;
+	private String name;
+	private String adress;
+	private String workTime;
+	private int discount;
+
+	public Provider(String type,String name, String adress, String workTime) {
+		this.name = name;
+		this.adress = adress;
+		this.workTime = workTime;
+		if (type.equals(TYPE_WHOLESALE)) {
+			this.discount = 15;
+		}
+		this.discount = 0;
+	}
+
+	public static Provider randomProvider() {
+		String type = TYPE_PROVIDERS[new Random().nextInt(TYPE_PROVIDERS.length)];
+		String name = ("provider" + new Random().nextInt(1000));
+		String adress;
+		String workTime;
+		
+		return new Provider(type, name, adress, workTime);
+	}
+
+}

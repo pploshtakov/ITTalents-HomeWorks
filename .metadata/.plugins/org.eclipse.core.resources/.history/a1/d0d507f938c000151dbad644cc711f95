@@ -1,0 +1,31 @@
+package demo;
+
+import java.util.Random;
+
+import driver.Driver;
+import gasStation.GasStation;
+import vehicles.Vehicle;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		//auto generate vignette
+				//print on screen???
+		GasStation gasStation = new GasStation();
+		//auto generate drivers
+		Driver[] drivers = new Driver[20];
+		Random random = new Random();
+		for (int i = 0; i < drivers.length; i++) {
+			drivers[i] = new Driver((Driver.randomName()), (random.nextInt(1000)), gasStation);
+		}
+		//auto generate vehicles
+		Vehicle[] vehicles = new Vehicle[200];
+		for (int i = 0; i < vehicles.length; i++) {
+			vehicles[i] = Vehicle.autoGenerateVehicle();
+		}
+		
+		
+
+	}
+
+}

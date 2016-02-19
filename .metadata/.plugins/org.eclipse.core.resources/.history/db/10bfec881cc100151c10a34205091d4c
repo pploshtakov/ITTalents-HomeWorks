@@ -1,0 +1,23 @@
+package dealers;
+
+import providers.Provider;
+import shopingCenters.ShopingCenter;
+
+public abstract class Dealer {
+	private String name;
+	private String agress;
+	private int capital;
+	private ShopingCenter[] shopingCenters;
+	private Provider[] providers;
+	
+	public Dealer(String name, String agress, int capital, int numberOfShopingCenters, int numberOfProviders) {
+		this.name = name;
+		this.agress = agress;
+		this.capital = capital;
+		this.shopingCenters = new ShopingCenter[numberOfShopingCenters];
+		this.providers = new Provider[numberOfProviders];
+	}
+	
+	
+
+}

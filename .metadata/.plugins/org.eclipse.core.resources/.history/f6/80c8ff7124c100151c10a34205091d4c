@@ -1,0 +1,28 @@
+package dealers;
+
+import providers.Provider;
+import shopingCenters.ShopingCenter;
+
+public class Peddler extends Dealer {
+
+	public Peddler(String name, String agress, int capital) {
+		super(name, agress, capital, 0, 1);
+	}
+
+	@Override
+	public void setProvider(Provider provider) {
+		if (provider.getType().equals(Provider.TYPE_RETAIL) && this.freePlacesForProviders > 0) {
+			this.providers[this.providers.length - this.freePlacesForProviders] = provider;
+		} else {
+			System.out.println("Peddlers only works with retail providers and only one.");
+		}
+	}
+
+	@Override
+	public void setShopingCenter(ShopingCenter shopingCenter) {
+		System.out.println("Peddler does not work in a particular shoping center!");
+	}
+	
+	
+
+}

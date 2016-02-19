@@ -1,0 +1,13 @@
+package shopingCenters;
+
+public class Mall extends ShopingCenter {
+
+	protected Mall(String adress, String workingTime, int area, int tax) {
+		super(adress, workingTime, area, tax);
+	}
+	
+	public Mall createRandomMall() {
+		String adress
+	}
+
+}

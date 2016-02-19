@@ -1,0 +1,11 @@
+package dateValidator;
+
+import java.util.Random;
+
+public class RandomGenerator {
+	public Random randomGenerator;
+	
+	
+	
+
+}

@@ -1,0 +1,40 @@
+package Notepad;
+
+public abstract class Notepad implements INotepad {
+	private String title;
+	private Page[] Pages;
+
+	@Override
+	public void addTextInPage(int numberOfPage, String text) {
+		if (numberOfPage > 0) {
+			this.Pages[numberOfPage - 1].addText(text);
+		} else {
+			System.out.println("No such page!");
+		}
+	}
+
+	@Override
+	public void addNewTextInPage(int numberOfPage, String text) {
+		if (numberOfPage > 0) {
+			this.Pages[numberOfPage - 1].delText();
+			this.Pages[numberOfPage - 1].addText(text);
+		} else {
+			System.out.println("No such page!");
+		}
+	}
+
+	@Override
+	public void delTextInPage(int numberOfPage) {
+		if (numberOfPage > 0) {
+			this.Pages[numberOfPage - 1].delText();
+		} else {
+			System.out.println("No such page!");
+		}
+	}
+
+	@Override
+	public void printFromNotepad() {
+
+	}
+
+}

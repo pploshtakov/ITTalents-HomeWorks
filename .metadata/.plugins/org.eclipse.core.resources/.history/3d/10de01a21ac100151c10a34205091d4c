@@ -1,0 +1,10 @@
+package dealers;
+
+public class ET extends Dealer {
+
+	public ET(String name, String agress, int capital, int numberOfShopingCenters) {
+		super(name, agress, capital, numberOfShopingCenters, 5);
+		// TODO Auto-generated constructor stub
+	}
+
+}

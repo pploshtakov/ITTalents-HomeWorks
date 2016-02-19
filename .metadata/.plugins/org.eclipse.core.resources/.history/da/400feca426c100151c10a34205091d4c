@@ -1,0 +1,29 @@
+package demo;
+
+import providers.Provider;
+import shopingCenters.ShopingCenter;
+
+public abstract class Demo {
+
+
+
+	public static void main(String[] args) {
+		//create 10 random providers
+		Provider[] providers = new Provider[10];
+		for(int i = 0; i < providers.length; i++) {
+			providers[i] = Provider.randomProvider();
+		}
+		
+		//create 20 random shopping centers
+		ShopingCenter[] shopingCenters = new ShopingCenter[20];
+		for(int i = 0; i < shopingCenters.length; i++) {
+			shopingCenters[i] = ShopingCenter.randomShopingCenter();
+		}
+		
+		
+		
+		
+		
+	}
+
+}

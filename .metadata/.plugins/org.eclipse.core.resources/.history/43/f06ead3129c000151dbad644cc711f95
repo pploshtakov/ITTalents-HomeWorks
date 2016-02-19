@@ -1,0 +1,5 @@
+package driverAndVehicle;
+
+public class Bus extends Vehicle {
+
+}
